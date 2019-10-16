@@ -1,3 +1,3 @@
 #!/bin/bash
 
-( rm -v $0 ) &
+rm -v $0
