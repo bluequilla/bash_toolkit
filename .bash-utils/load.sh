@@ -5,9 +5,11 @@
 # export VERZEICHNIS=$( dirname "$AUFRUF" )
 #
 
-cd ~/.bash-utils || echo "Sourcing failed!"
+pushd ~/.bash-utils > /dev/null || echo "Sourcing failed!"
 
 for SCRIPT in _*.sh
 do
 	source "$SCRIPT"
 done
+
+popd > /dev/null
